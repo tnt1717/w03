@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System;
 
 public class GameManager : MonoBehaviour
@@ -42,6 +43,15 @@ public class GameManager : MonoBehaviour
         
         Debug.Log(score);
     }
-    
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            SceneManager.LoadScene("lv2");
+        }
+        if (other.tag == "new")
+        {
+            SceneManager.LoadScene("Level1");
+        }
+    }
 }
