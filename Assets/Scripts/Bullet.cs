@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     public float speed = 30f;
     private Rigidbody rb;
     public float atk =100;
-
+    
     void Start()
     {
         // 往前飛
@@ -25,6 +25,7 @@ public class Bullet : MonoBehaviour
         {
          gameObject.SetActive(false);
          Destroy(gameObject);
+            GameManager.score += 20;
         }
     }
 }
