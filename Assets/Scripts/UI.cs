@@ -70,6 +70,7 @@ public class UI : MonoBehaviour
     }
     public void exit()
     {
+        Debug.Log("out");
         Application.Quit();
     }
     public void home()
@@ -81,11 +82,12 @@ public class UI : MonoBehaviour
         SceneManager.LoadScene("Level1");
         Time.timeScale = 1;
         GameManager.score = 0;
+        Debug.Log("in");
         hpbar.SetActive(true);
     }
     public void restart()
     {
-        SceneManager.LoadScene("solo");
+        SceneManager.LoadScene("Level1");
         Time.timeScale = 1;
         GameManager.score = 0;
         hpbar.SetActive(true);
