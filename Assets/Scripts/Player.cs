@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Joystick joyStick;
     public Transform firePoint;
     public GameObject bulletPrefab;
+    static public float HP = 100;
 
     private CharacterController controller;
 
