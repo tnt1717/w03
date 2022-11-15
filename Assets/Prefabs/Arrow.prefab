@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 92fa055dc3033cd4fb6ffddff7cc8f81, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,7 +120,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 92fa055dc3033cd4fb6ffddff7cc8f81, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 6777070624520225243}
   - component: {fileID: 7887740421481487250}
   - component: {fileID: 104660629594855336}
-  - component: {fileID: 6435507360416964039}
+  - component: {fileID: 3146698933516183080}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Bullet
@@ -281,7 +281,7 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 2
   m_Center: {x: -0.01, y: 0, z: 0}
---- !u!114 &6435507360416964039
+--- !u!114 &3146698933516183080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

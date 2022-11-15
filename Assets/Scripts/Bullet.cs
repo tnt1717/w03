@@ -35,8 +35,10 @@ public class Bullet : MonoBehaviour
             gameObject.SetActive(false);
             Destroy(gameObject);
             GameManager.score += 20;
-
-            
+        }
+        if (other.tag == "wall")
+        {
+            Destroy(gameObject);
         }
         
     }
