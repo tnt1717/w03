@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
             Fire();
 
             // 暫停 0.5 秒
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.7f);
         }
     }
 }

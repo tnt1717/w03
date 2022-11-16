@@ -18,6 +18,7 @@ public class UI : MonoBehaviour
     public GameObject over;
     public AudioSource bgm;
     public Slider slider;
+    private float timer;
 
     void Start()
     {
@@ -25,11 +26,16 @@ public class UI : MonoBehaviour
         menu2.SetActive(false);
         menu3.SetActive(false);
         menu4.SetActive(false);
-        menu5.SetActive(false);
+        menu5.SetActive(true);
         slider.transform.gameObject.SetActive(false);
     }
     void Update()
     {
+        timer += Time.deltaTime;
+        if (timer >= 2)
+        {
+            menu5.SetActive(false);
+        }
         if (Player.HP <= 0)
         {
             over.SetActive(true);
