@@ -79,7 +79,7 @@ public class UI : MonoBehaviour
     }
     public void start()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("01");
         Time.timeScale = 1;
         GameManager.score = 0;
         Debug.Log("in");
@@ -87,7 +87,8 @@ public class UI : MonoBehaviour
     }
     public void restart()
     {
-        SceneManager.LoadScene("Level1");
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
         GameManager.score = 0;
         hpbar.SetActive(true);
