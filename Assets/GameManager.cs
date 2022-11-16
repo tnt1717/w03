@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour
     static public int highscore;
     public Text HighScoreText;
     public Text Score;
+    public GameObject home;
     // Start is called before the first frame update
     void Start()
     {
         UpdateHighScore();
+        home.SetActive(false);
     }
 
     // Update is called once per frame
@@ -52,6 +54,12 @@ public class GameManager : MonoBehaviour
         if (other.tag == "new")
         {
             SceneManager.LoadScene("Level1");
+        }
+        if (other.tag == "end")
+        {
+            Time.timeScale = 0.5f;
+            home.SetActive(true);
+
         }
     }
 }

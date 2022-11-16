@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - wall
   - new
+  - end
   layers:
   - Default
   - TransparentFX
